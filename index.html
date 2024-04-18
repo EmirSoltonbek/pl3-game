@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pl№3-game</title>
+    <link rel="shortcut icon" href="./img/liceilogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Game canvas -->
+<canvas id="c"></canvas>
+
+<!-- Gameplay HUD -->
+<div class="hud">
+	<div class="hud__score">
+		<div class="score-lbl"></div>
+		<div class="cube-count-lbl"></div>
+	</div>
+	<div class="pause-btn"><div></div></div>
+	<div class="slowmo">
+		<div class="slowmo__bar"></div>
+	</div>
+</div>
+
+<!-- Menu System -->
+<div class="menus">
+	<div class="menu menu--main">
+		<h1>ИГРА</h1>
+		<button type="button" class="play-normal-btn">НАЧАТЬ</button>
+		<button type="button" class="play-casual-btn">СВОБОДНЫЙ РЕЖИМ</button>
+		<div class="credits">Игра от <a href="http://kl-3.com/">Профессионального лицея №3</a></div>
+	</div>
+	<div class="menu menu--pause">
+		<h1>Пауза</h1>
+		<button type="button" class="resume-btn">ВОЗОБНОВИТЬ</button>
+		<button type="button" class="menu-btn--pause">ГЛАВНОЕ МЕНЮ</button>
+	</div>
+	<div class="menu menu--score">
+		<h1>Игра</h1>
+		<h2>Очки:</h2>
+		<div class="final-score-lbl"></div>
+		<div class="high-score-lbl"></div>
+		<button type="button" class="play-again-btn">ИГРАТЬ СНОВА</button>
+		<button type="button" class="menu-btn--score">ГЛАВНОЕ МЕНЮ</button>
+	</div>
+</div>
+<div class="logo" style="width: 70px; height: 70px; position: fixed; top: 50px; left: 50%; transform: translate(-50%,-50%); background-color: white; border-radius: 50%;">
+    <a href="http://kl-3.com/">
+    <img src="./img/WhatsApp_Image_2024-04-18_at_15.50.18-removebg-preview.png" alt="" style="width: 100%; height: 100%;">
+    </a>
+</div>
+
+<script src="./js/script.js"></script>
+</body>
+</html>
